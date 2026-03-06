@@ -122,14 +122,6 @@ ul {
     background: linear-gradient(135deg, #1a1a2e 0%, #5a4a1e 100%);
 }
 
-.hero-shortcomings {
-    background: linear-gradient(135deg, #1a1a2e 0%, #5a2e2e 100%);
-}
-
-.hero-profits {
-    background: linear-gradient(135deg, #1a1a2e 0%, #2e5a3a 100%);
-}
-
 /* ===== 主要内容区域 ===== */
 main {
     padding: 3rem 0;
