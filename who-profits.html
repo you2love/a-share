@@ -16,60 +16,102 @@
                 <li><a href="profit-guide.html">赚钱指南</a></li>
                 <li><a href="history.html">发展历程</a></li>
                 <li><a href="who-profits.html" class="active">谁赚谁赔</a></li>
+                <li><a href="leaders.html">行业龙头</a></li>
             </ul>
         </div>
     </nav>
 
     <main class="container">
-        <section class="intro-section">
-            <h2>📊 A 股账户全景画像</h2>
-            <div class="intro-box">
-                <p>根据上交所、深交所、中国结算的公开数据，A 股市场投资者结构呈现明显的特征。不同资金量、职业、年龄、性别的投资者，盈亏表现差异巨大。</p>
-                <p class="data-source">数据来源：上交所统计年鉴、中国结算、各大券商研究报告</p>
+        <!-- 总览 -->
+        <section class="overview-section">
+            <h2>📊 A 股投资者盈亏总览</h2>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="pie-chart">
+                        <div class="pie-segment loss" style="--percent: 70"></div>
+                        <div class="pie-segment break-even" style="--percent: 20"></div>
+                        <div class="pie-segment profit" style="--percent: 10"></div>
+                    </div>
+                    <div class="pie-legend">
+                        <div class="legend-item"><span class="legend-color loss"></span><span>亏损 70%</span></div>
+                        <div class="legend-item"><span class="legend-color break-even"></span><span>持平 20%</span></div>
+                        <div class="legend-item"><span class="legend-color profit"></span><span>盈利 10%</span></div>
+                    </div>
+                </div>
+                <div class="overview-text">
+                    <h3>七亏二平一赚</h3>
+                    <p>这是 A 股市场的残酷现实。根据上交所和各大券商的公开数据，长期来看，只有约 10% 的散户能够盈利。</p>
+                    <p>为什么有人赚钱，有人赔钱？让我们从资金量、职业、年龄、性别四个维度来分析。</p>
+                </div>
             </div>
         </section>
 
-        <!-- 按资金量分布 -->
+        <!-- 按资金量分布 - 流程图样式 -->
         <section class="account-section">
             <h2>💰 按资金量分布</h2>
             <div class="account-intro">
-                <p>A 股 2.2 亿投资者中，散户占比超过 99%。但资金量分布极不均衡，呈现典型的"金字塔"结构。</p>
+                <p>A 股 2.2 亿投资者中，散户占比超过 99%。资金量分布呈现典型的"金字塔"结构。</p>
             </div>
 
-            <div class="capital-grid">
-                <div class="capital-card">
-                    <div class="capital-range">10 万以下</div>
-                    <div class="capital-percent">占比约 50%</div>
-                    <div class="capital-desc">典型特征：入市时间短，交易频繁，追涨杀跌严重</div>
-                    <div class="capital-result">📉 盈亏：约 80% 亏损</div>
+            <div class="flow-chart">
+                <div class="flow-item flow-loss">
+                    <div class="flow-bar" style="width: 50%"></div>
+                    <div class="flow-content">
+                        <div class="flow-title">
+                            <span class="flow-range">10 万以下</span>
+                            <span class="flow-percent">50%</span>
+                        </div>
+                        <div class="flow-desc">入市时间短，交易频繁</div>
+                        <div class="flow-result">📉 80% 亏损</div>
+                    </div>
                 </div>
 
-                <div class="capital-card">
-                    <div class="capital-range">10-50 万</div>
-                    <div class="capital-percent">占比约 35%</div>
-                    <div class="capital-desc">典型特征：有一定经验，但仍以短线为主，喜欢听消息</div>
-                    <div class="capital-result">📉 盈亏：约 70% 亏损</div>
+                <div class="flow-item flow-loss">
+                    <div class="flow-bar" style="width: 35%"></div>
+                    <div class="flow-content">
+                        <div class="flow-title">
+                            <span class="flow-range">10-50 万</span>
+                            <span class="flow-percent">35%</span>
+                        </div>
+                        <div class="flow-desc">有一定经验，仍以短线为主</div>
+                        <div class="flow-result">📉 70% 亏损</div>
+                    </div>
                 </div>
 
-                <div class="capital-card">
-                    <div class="capital-range">50-300 万</div>
-                    <div class="capital-percent">占比约 12%</div>
-                    <div class="capital-desc">典型特征：经验丰富，开始注重价值，交易频率降低</div>
-                    <div class="capital-result">📊 盈亏：约 50% 持平或微利</div>
+                <div class="flow-item flow-break">
+                    <div class="flow-bar" style="width: 12%"></div>
+                    <div class="flow-content">
+                        <div class="flow-title">
+                            <span class="flow-range">50-300 万</span>
+                            <span class="flow-percent">12%</span>
+                        </div>
+                        <div class="flow-desc">经验丰富，注重价值</div>
+                        <div class="flow-result">📊 50% 持平</div>
+                    </div>
                 </div>
 
-                <div class="capital-card">
-                    <div class="capital-range">300-1000 万</div>
-                    <div class="capital-percent">占比约 2.5%</div>
-                    <div class="capital-desc">典型特征：专业投资者，有完整交易体系，注重风控</div>
-                    <div class="capital-result">📈 盈亏：约 60% 盈利</div>
+                <div class="flow-item flow-profit">
+                    <div class="flow-bar" style="width: 2.5%"></div>
+                    <div class="flow-content">
+                        <div class="flow-title">
+                            <span class="flow-range">300-1000 万</span>
+                            <span class="flow-percent">2.5%</span>
+                        </div>
+                        <div class="flow-desc">专业投资者，有交易体系</div>
+                        <div class="flow-result">📈 60% 盈利</div>
+                    </div>
                 </div>
 
-                <div class="capital-card">
-                    <div class="capital-range">1000 万以上</div>
-                    <div class="capital-percent">占比约 0.5%</div>
-                    <div class="capital-desc">典型特征：产业资本、专业机构、超高净值人群</div>
-                    <div class="capital-result">📈 盈亏：约 70% 盈利</div>
+                <div class="flow-item flow-profit">
+                    <div class="flow-bar" style="width: 0.5%"></div>
+                    <div class="flow-content">
+                        <div class="flow-title">
+                            <span class="flow-range">1000 万以上</span>
+                            <span class="flow-percent">0.5%</span>
+                        </div>
+                        <div class="flow-desc">产业资本、专业机构</div>
+                        <div class="flow-result">📈 70% 盈利</div>
+                    </div>
                 </div>
             </div>
 
@@ -83,65 +125,72 @@
             </div>
         </section>
 
-        <!-- 按职业分布 -->
+        <!-- 按职业分布 - 表格样式 -->
         <section class="account-section">
             <h2>👔 按职业分布</h2>
-            <div class="job-grid">
-                <div class="job-card">
-                    <div class="job-icon">🏢</div>
-                    <h3>企业主/高管</h3>
-                    <div class="job-percent">占比约 8%</div>
-                    <div class="job-desc">特点：资金量大，信息优势明显，多投资自己熟悉的行业</div>
-                    <div class="job-result">📈 盈利比例：约 65%</div>
-                </div>
-
-                <div class="job-card">
-                    <div class="job-icon">💼</div>
-                    <h3>金融从业者</h3>
-                    <div class="job-percent">占比约 5%</div>
-                    <div class="job-desc">特点：专业能力强，信息渠道广，但有时过度自信</div>
-                    <div class="job-result">📈 盈利比例：约 55%</div>
-                </div>
-
-                <div class="job-card">
-                    <div class="job-icon">👨‍💼</div>
-                    <h3>企业白领</h3>
-                    <div class="job-percent">占比约 25%</div>
-                    <div class="job-desc">特点：有稳定收入，但时间有限，多以中线为主</div>
-                    <div class="job-result">📊 盈利比例：约 30%</div>
-                </div>
-
-                <div class="job-card">
-                    <div class="job-icon">🔧</div>
-                    <h3>技术人员/专业人士</h3>
-                    <div class="job-percent">占比约 15%</div>
-                    <div class="job-desc">特点：逻辑性强，喜欢研究，但容易过度分析</div>
-                    <div class="job-result">📊 盈利比例：约 35%</div>
-                </div>
-
-                <div class="job-card">
-                    <div class="job-icon">👨‍🏫</div>
-                    <h3>教师/公务员</h3>
-                    <div class="job-percent">占比约 12%</div>
-                    <div class="job-desc">特点：风险偏好低，偏好稳健投资，持有周期长</div>
-                    <div class="job-result">📈 盈利比例：约 45%</div>
-                </div>
-
-                <div class="job-card">
-                    <div class="job-icon">👵</div>
-                    <h3>退休人员</h3>
-                    <div class="job-percent">占比约 15%</div>
-                    <div class="job-desc">特点：时间充裕，喜欢听消息，容易追涨杀跌</div>
-                    <div class="job-result">📉 盈利比例：约 25%</div>
-                </div>
-
-                <div class="job-card">
-                    <div class="job-icon">👨‍🌾</div>
-                    <h3>自由职业/其他</h3>
-                    <div class="job-percent">占比约 20%</div>
-                    <div class="job-desc">特点：时间自由，但收入不稳定，投资风格差异大</div>
-                    <div class="job-result">📉 盈利比例：约 28%</div>
-                </div>
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>职业</th>
+                            <th>占比</th>
+                            <th>特点</th>
+                            <th>盈利比例</th>
+                            <th>评级</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="job-icon">🏢</span> 企业主/高管</td>
+                            <td>8%</td>
+                            <td>资金量大，信息优势明显</td>
+                            <td class="profit-rate high">65%</td>
+                            <td><span class="rating excellent">优秀</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="job-icon">💼</span> 金融从业者</td>
+                            <td>5%</td>
+                            <td>专业能力强，信息渠道广</td>
+                            <td class="profit-rate high">55%</td>
+                            <td><span class="rating good">良好</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="job-icon">👨‍🏫</span> 教师/公务员</td>
+                            <td>12%</td>
+                            <td>风险偏好低，持有周期长</td>
+                            <td class="profit-rate medium">45%</td>
+                            <td><span class="rating good">良好</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="job-icon">🔧</span> 技术人员</td>
+                            <td>15%</td>
+                            <td>逻辑性强，容易过度分析</td>
+                            <td class="profit-rate medium">35%</td>
+                            <td><span class="rating average">一般</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="job-icon">👨‍💼</span> 企业白领</td>
+                            <td>25%</td>
+                            <td>有稳定收入，时间有限</td>
+                            <td class="profit-rate low">30%</td>
+                            <td><span class="rating average">一般</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="job-icon">👨‍🌾</span> 自由职业/其他</td>
+                            <td>20%</td>
+                            <td>时间自由，收入不稳定</td>
+                            <td class="profit-rate low">28%</td>
+                            <td><span class="rating poor">较差</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="job-icon">👵</span> 退休人员</td>
+                            <td>15%</td>
+                            <td>时间充裕，容易追涨杀跌</td>
+                            <td class="profit-rate low">25%</td>
+                            <td><span class="rating poor">较差</span></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <div class="job-summary">
@@ -154,50 +203,47 @@
             </div>
         </section>
 
-        <!-- 按年龄分布 -->
+        <!-- 按年龄分布 - 条形图样式 -->
         <section class="account-section">
             <h2>🎂 按年龄分布</h2>
-            <div class="age-grid">
-                <div class="age-card">
-                    <div class="age-range">18-25 岁</div>
-                    <div class="age-percent">占比约 8%</div>
-                    <div class="age-desc">特点：入市时间短，风险偏好高，喜欢追热点、炒题材</div>
-                    <div class="age-result">📉 盈利比例：约 20%</div>
-                    <div class="age-tip">💡 建议：先学习，再投资；用闲钱，练手感</div>
+            <div class="bar-chart-container">
+                <div class="bar-item">
+                    <div class="bar-label">18-25 岁</div>
+                    <div class="bar-wrapper">
+                        <div class="bar bar-low" style="width: 20%"></div>
+                    </div>
+                    <div class="bar-value">20%</div>
                 </div>
-
-                <div class="age-card">
-                    <div class="age-range">26-35 岁</div>
-                    <div class="age-percent">占比约 28%</div>
-                    <div class="age-desc">特点：有一定积蓄，学习能力强，但急于求成</div>
-                    <div class="age-result">📉 盈利比例：约 28%</div>
-                    <div class="age-tip">💡 建议：建立系统，控制频率，不要 All in</div>
+                <div class="bar-item">
+                    <div class="bar-label">26-35 岁</div>
+                    <div class="bar-wrapper">
+                        <div class="bar bar-low" style="width: 28%"></div>
+                    </div>
+                    <div class="bar-value">28%</div>
                 </div>
-
-                <div class="age-card">
-                    <div class="age-range">36-45 岁</div>
-                    <div class="age-percent">占比约 32%</div>
-                    <div class="age-desc">特点：资金实力最强，经验丰富，心态相对成熟</div>
-                    <div class="age-result">📈 盈利比例：约 40%</div>
-                    <div class="age-tip">💡 建议：发挥经验优势，注重价值投资</div>
+                <div class="bar-item">
+                    <div class="bar-label">36-45 岁</div>
+                    <div class="bar-wrapper">
+                        <div class="bar bar-medium" style="width: 40%"></div>
+                    </div>
+                    <div class="bar-value">40%</div>
                 </div>
-
-                <div class="age-card">
-                    <div class="age-range">46-55 岁</div>
-                    <div class="age-percent">占比约 20%</div>
-                    <div class="age-desc">特点：投资经验丰富，风险意识强，偏好稳健</div>
-                    <div class="age-result">📈 盈利比例：约 45%</div>
-                    <div class="age-tip">💡 建议：继续发挥稳健优势，避免保守过度</div>
+                <div class="bar-item">
+                    <div class="bar-label">46-55 岁</div>
+                    <div class="bar-wrapper">
+                        <div class="bar bar-high" style="width: 45%"></div>
+                    </div>
+                    <div class="bar-value">45%</div>
                 </div>
-
-                <div class="age-card">
-                    <div class="age-range">56 岁以上</div>
-                    <div class="age-percent">占比约 12%</div>
-                    <div class="age-desc">特点：时间充裕，但信息滞后，容易被误导</div>
-                    <div class="age-result">📉 盈利比例：约 30%</div>
-                    <div class="age-tip">💡 建议：远离题材炒作，专注高股息蓝筹</div>
+                <div class="bar-item">
+                    <div class="bar-label">56 岁以上</div>
+                    <div class="bar-wrapper">
+                        <div class="bar bar-low" style="width: 30%"></div>
+                    </div>
+                    <div class="bar-value">30%</div>
                 </div>
             </div>
+            <p class="chart-note">图表显示各年龄段盈利比例</p>
 
             <div class="age-summary">
                 <h3>📌 核心结论</h3>
@@ -209,50 +255,72 @@
             </div>
         </section>
 
-        <!-- 按性别分布 -->
+        <!-- 按性别分布 - 对比卡片 -->
         <section class="account-section">
             <h2>👫 按性别分布</h2>
             <div class="gender-comparison">
                 <div class="gender-card male">
-                    <div class="gender-icon">👨</div>
-                    <h3>男性投资者</h3>
-                    <div class="gender-percent">占比约 65%</div>
+                    <div class="gender-header">
+                        <div class="gender-icon">👨</div>
+                        <h3>男性投资者</h3>
+                        <div class="gender-percent">占比 65%</div>
+                    </div>
                     <div class="gender-stats">
-                        <div class="stat-item">
-                            <span class="stat-label">平均交易频率</span>
-                            <span class="stat-value">每年约 35 次</span>
+                        <div class="stat-row">
+                            <span class="stat-label">交易频率</span>
+                            <div class="stat-bar-bg">
+                                <div class="stat-bar" style="width: 70%"></div>
+                            </div>
+                            <span class="stat-value">35 次/年</span>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-label">平均持仓周期</span>
-                            <span class="stat-value">约 15 天</span>
+                        <div class="stat-row">
+                            <span class="stat-label">持仓周期</span>
+                            <div class="stat-bar-bg">
+                                <div class="stat-bar short" style="width: 30%"></div>
+                            </div>
+                            <span class="stat-value">15 天</span>
                         </div>
-                        <div class="stat-item">
+                        <div class="stat-row">
                             <span class="stat-label">盈利比例</span>
-                            <span class="stat-value danger">约 28%</span>
+                            <div class="stat-bar-bg">
+                                <div class="stat-bar low" style="width: 28%"></div>
+                            </div>
+                            <span class="stat-value danger">28%</span>
                         </div>
                     </div>
-                    <div class="gender-desc">特点：风险偏好高，交易频繁，喜欢短线博弈，过度自信</div>
+                    <div class="gender-desc">风险偏好高，交易频繁，喜欢短线博弈，过度自信</div>
                 </div>
 
                 <div class="gender-card female">
-                    <div class="gender-icon">👩</div>
-                    <h3>女性投资者</h3>
-                    <div class="gender-percent">占比约 35%</div>
+                    <div class="gender-header">
+                        <div class="gender-icon">👩</div>
+                        <h3>女性投资者</h3>
+                        <div class="gender-percent">占比 35%</div>
+                    </div>
                     <div class="gender-stats">
-                        <div class="stat-item">
-                            <span class="stat-label">平均交易频率</span>
-                            <span class="stat-value">每年约 18 次</span>
+                        <div class="stat-row">
+                            <span class="stat-label">交易频率</span>
+                            <div class="stat-bar-bg">
+                                <div class="stat-bar" style="width: 35%"></div>
+                            </div>
+                            <span class="stat-value">18 次/年</span>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-label">平均持仓周期</span>
-                            <span class="stat-value">约 45 天</span>
+                        <div class="stat-row">
+                            <span class="stat-label">持仓周期</span>
+                            <div class="stat-bar-bg">
+                                <div class="stat-bar long" style="width: 75%"></div>
+                            </div>
+                            <span class="stat-value">45 天</span>
                         </div>
-                        <div class="stat-item">
+                        <div class="stat-row">
                             <span class="stat-label">盈利比例</span>
-                            <span class="stat-value success">约 38%</span>
+                            <div class="stat-bar-bg">
+                                <div class="stat-bar medium" style="width: 38%"></div>
+                            </div>
+                            <span class="stat-value success">38%</span>
                         </div>
                     </div>
-                    <div class="gender-desc">特点：风险偏好低，交易频率低，更有耐心，更愿意长期持有</div>
+                    <div class="gender-desc">风险偏好低，交易频率低，更有耐心，更愿意长期持有</div>
                 </div>
             </div>
 
@@ -273,36 +341,59 @@
             <div class="profile-grid">
                 <div class="profile-card best">
                     <div class="profile-title">🏆 最容易赚钱的投资者</div>
-                    <ul>
-                        <li><strong>资金量：</strong>300 万以上</li>
-                        <li><strong>职业：</strong>企业主/金融从业者</li>
-                        <li><strong>年龄：</strong>36-55 岁</li>
-                        <li><strong>性别：</strong>女性略优</li>
-                        <li><strong>共同特征：</strong>有耐心、有系统、懂风控、不频繁交易</li>
-                    </ul>
+                    <div class="profile-flow">
+                        <div class="profile-step">
+                            <span class="step-icon">💰</span>
+                            <span>300 万以上</span>
+                        </div>
+                        <div class="profile-arrow">→</div>
+                        <div class="profile-step">
+                            <span class="step-icon">👔</span>
+                            <span>企业主/金融</span>
+                        </div>
+                        <div class="profile-arrow">→</div>
+                        <div class="profile-step">
+                            <span class="step-icon">🎂</span>
+                            <span>36-55 岁</span>
+                        </div>
+                        <div class="profile-arrow">→</div>
+                        <div class="profile-step">
+                            <span class="step-icon">👩</span>
+                            <span>女性略优</span>
+                        </div>
+                    </div>
+                    <div class="profile-features">
+                        <strong>共同特征：</strong>有耐心、有系统、懂风控、不频繁交易
+                    </div>
                 </div>
 
                 <div class="profile-card worst">
                     <div class="profile-title">⚠️ 最容易亏损的投资者</div>
-                    <ul>
-                        <li><strong>资金量：</strong>50 万以下</li>
-                        <li><strong>职业：</strong>无稳定职业/退休人员</li>
-                        <li><strong>年龄：</strong>25 岁以下/60 岁以上</li>
-                        <li><strong>性别：</strong>男性略多</li>
-                        <li><strong>共同特征：</strong>频繁交易、听消息、不止损、想快速致富</li>
-                    </ul>
+                    <div class="profile-flow">
+                        <div class="profile-step">
+                            <span class="step-icon">💰</span>
+                            <span>50 万以下</span>
+                        </div>
+                        <div class="profile-arrow">→</div>
+                        <div class="profile-step">
+                            <span class="step-icon">👔</span>
+                            <span>无稳定职业</span>
+                        </div>
+                        <div class="profile-arrow">→</div>
+                        <div class="profile-step">
+                            <span class="step-icon">🎂</span>
+                            <span>25 岁以下/60 岁以上</span>
+                        </div>
+                        <div class="profile-arrow">→</div>
+                        <div class="profile-step">
+                            <span class="step-icon">👨</span>
+                            <span>男性略多</span>
+                        </div>
+                    </div>
+                    <div class="profile-features">
+                        <strong>共同特征：</strong>频繁交易、听消息、不止损、想快速致富
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- 最后提醒 -->
-        <section class="final-reminder">
-            <h2>💡 给你的建议</h2>
-            <div class="reminder-box">
-                <p class="reminder-text">📌 <strong>不要和别人比收益</strong> —— 每个人的情况不同，找到适合自己的方式</p>
-                <p class="reminder-text">📌 <strong>承认自己的局限</strong> —— 小资金、没时间、没经验，就不要妄想暴富</p>
-                <p class="reminder-text">📌 <strong>学习是最好的投资</strong> —— 提升认知，建立系统，比选对股票更重要</p>
-                <p class="reminder-text highlight-text">🎯 <strong>记住：在 A 股，活下来就是胜利。不亏就是赚，少亏也是赚。</strong></p>
             </div>
         </section>
     </main>
