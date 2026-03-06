@@ -118,6 +118,10 @@ ul {
     background: linear-gradient(135deg, #1a1a2e 0%, #2e5a1e 100%);
 }
 
+.hero-history {
+    background: linear-gradient(135deg, #1a1a2e 0%, #5a4a1e 100%);
+}
+
 /* ===== 主要内容区域 ===== */
 main {
     padding: 3rem 0;
@@ -929,6 +933,575 @@ h4 {
     font-size: 1.1rem;
 }
 
+/* ===== 股市底层逻辑 ===== */
+.market-rules {
+    margin-bottom: 3rem;
+}
+
+.rule-section {
+    margin-bottom: 3rem;
+}
+
+.rule-section h3 {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-dark) 100%);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.concept-box {
+    background: var(--bg-white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.unpredictability-box {
+    border: 2px solid var(--warning-color);
+}
+
+.concept-definition {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
+    background: var(--bg-light);
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+.concept-content {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.concept-left,
+.concept-right {
+    background: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.concept-left h4,
+.concept-right h4 {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.concept-left ul,
+.concept-right ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+}
+
+.concept-left li,
+.concept-right li {
+    margin-bottom: 0.5rem;
+}
+
+.key-point {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background: #e8f5e9;
+    border-radius: 5px;
+    border-left: 4px solid var(--success-color);
+    text-align: center;
+}
+
+.key-point.danger {
+    background: #ffe6e6;
+    border-left-color: var(--danger-color);
+}
+
+.concept-summary {
+    padding: 1rem;
+    background: linear-gradient(135deg, rgba(196, 30, 58, 0.1), rgba(139, 0, 0, 0.1));
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.action-guide {
+    background: #e3f2fd;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    border-left: 4px solid #2196f3;
+}
+
+.action-guide strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.action-guide ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+}
+
+.action-guide li {
+    margin-bottom: 0.5rem;
+}
+
+/* ===== 周期和风格 ===== */
+.cycle-content {
+    margin-bottom: 1.5rem;
+}
+
+.cycle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cycle-card {
+    background: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.cycle-card h4 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.cycle-card ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+}
+
+.cycle-card li {
+    margin-bottom: 0.5rem;
+}
+
+.cycle-example {
+    background: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.cycle-example h4 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.example-item {
+    display: flex;
+    gap: 1rem;
+    padding: 0.8rem;
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    align-items: center;
+}
+
+.example-year {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.example-desc {
+    color: var(--text-color);
+}
+
+/* ===== 预测不了 ===== */
+.why-content {
+    margin-bottom: 1.5rem;
+}
+
+.why-content h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.why-card {
+    background: var(--bg-light);
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.why-card h5 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.why-card p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.prediction-trap {
+    background: #fff3e0;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--warning-color);
+}
+
+.prediction-trap h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.trap-comparison {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.trap-side {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.trap-side h5 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.trap-side ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+}
+
+.trap-side li {
+    margin-bottom: 0.3rem;
+}
+
+/* ===== 业绩 vs 预期 ===== */
+.expectation-content {
+    margin-bottom: 1.5rem;
+}
+
+.expectation-formula {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-dark));
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.formula-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.formula-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.formula-equation {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+}
+
+.formula-explain {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.formula-case {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.formula-case.positive {
+    background: rgba(40, 167, 69, 0.3);
+    border: 1px solid var(--success-color);
+}
+
+.formula-case.neutral {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.formula-case.negative {
+    background: rgba(220, 53, 69, 0.3);
+    border: 1px solid var(--danger-color);
+}
+
+.case-result {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.case-desc {
+    font-size: 0.9rem;
+}
+
+.expectation-examples {
+    margin-top: 1.5rem;
+}
+
+.expectation-examples h4 {
+    margin-bottom: 1rem;
+}
+
+.scenario-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.scenario-card {
+    background: var(--bg-light);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.scenario-card h5 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.scenario-card p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* ===== 发展历程页面 ===== */
+.history-intro {
+    margin-bottom: 3rem;
+}
+
+.history-intro .highlight {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, rgba(196, 30, 58, 0.1), rgba(139, 0, 0, 0.1));
+    border-radius: 5px;
+    border-left: 4px solid var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.timeline-section {
+    margin-bottom: 3rem;
+}
+
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--primary-color), var(--primary-dark));
+    border-radius: 2px;
+}
+
+.timeline-decade {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.decade-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.decade-year {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-dark));
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.decade-header h3 {
+    color: var(--secondary-color);
+    margin: 0.5rem 0 0 0;
+}
+
+.decade-events {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.event-card {
+    background: var(--bg-white);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.event-year {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-dark));
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    min-width: 100px;
+    flex-shrink: 0;
+}
+
+.event-content {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.event-content h4 {
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.event-content p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.event-tag {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 0.8rem;
+    background: var(--bg-light);
+    color: var(--secondary-color);
+}
+
+.event-tag.warning {
+    background: #fff3e0;
+    color: #e65100;
+}
+
+.event-tag.success {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.event-tag.danger {
+    background: #ffebee;
+    color: #c62828;
+}
+
+/* ===== 历史规律总结 ===== */
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.summary-card {
+    background: var(--bg-white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.summary-card:hover {
+    transform: translateY(-5px);
+}
+
+.summary-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.summary-card h3 {
+    color: var(--primary-color);
+    margin: 0.5rem 0;
+}
+
+.summary-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* ===== 历史教训 ===== */
+.lesson-section {
+    margin-bottom: 3rem;
+}
+
+.lesson-box {
+    background: var(--bg-white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.lesson-item {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.lesson-item:last-child {
+    border-bottom: none;
+}
+
+.lesson-num {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    opacity: 0.3;
+    flex-shrink: 0;
+}
+
+.lesson-content h4 {
+    color: var(--secondary-color);
+    margin-top: 0;
+}
+
+.lesson-content p {
+    color: var(--text-light);
+}
+
 .money-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1288,6 +1861,62 @@ footer p {
     .question-item {
         flex-direction: column;
         text-align: center;
+    }
+
+    .concept-content {
+        grid-template-columns: 1fr;
+    }
+
+    .cycle-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trap-comparison {
+        grid-template-columns: 1fr;
+    }
+
+    .formula-main {
+        flex-direction: column;
+    }
+
+    .formula-explain {
+        grid-template-columns: 1fr;
+    }
+
+    .scenario-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .event-card {
+        flex-direction: column;
+    }
+
+    .event-year {
+        min-width: auto;
+        width: 100%;
+        justify-content: flex-start;
+        padding-left: 3rem;
+    }
+
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lesson-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .lesson-num {
+        font-size: 2rem;
     }
 }
 
