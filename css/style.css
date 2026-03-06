@@ -126,6 +126,10 @@ ul {
     background: linear-gradient(135deg, #1a1a2e 0%, #5a2e2e 100%);
 }
 
+.hero-profits {
+    background: linear-gradient(135deg, #1a1a2e 0%, #2e5a3a 100%);
+}
+
 /* ===== 主要内容区域 ===== */
 main {
     padding: 3rem 0;
@@ -1781,6 +1785,378 @@ h4 {
     font-weight: bold;
 }
 
+/* ===== 谁赚谁赔页面 ===== */
+.data-highlight {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.data-item {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    background: var(--bg-white);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.data-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.data-number:first-child {
+    color: var(--danger-color);
+}
+
+.data-number:last-child {
+    color: var(--success-color);
+}
+
+.data-label {
+    font-size: 1rem;
+    color: var(--text-light);
+}
+
+.data-source {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+/* ===== 对比表格 ===== */
+.comparison-section {
+    margin-bottom: 3rem;
+}
+
+.comparison-table {
+    background: var(--bg-white);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.comparison-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-dark));
+}
+
+.comparison-col {
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.winner-col {
+    background: linear-gradient(135deg, #2e7d32, #1b5e20);
+}
+
+.loser-col {
+    background: linear-gradient(135deg, #c62828, #8e0000);
+}
+
+.comparison-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.comparison-row:last-child {
+    border-bottom: none;
+}
+
+.comparison-cell {
+    padding: 1.5rem;
+}
+
+.winner-cell {
+    background: #e8f5e9;
+    border-right: 1px solid var(--border-color);
+}
+
+.loser-cell {
+    background: #ffebee;
+}
+
+.comparison-cell h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.winner-cell h4 {
+    color: #2e7d32;
+}
+
+.loser-cell h4 {
+    color: #c62828;
+}
+
+.comparison-cell p {
+    margin: 0;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* ===== 赚钱特征 ===== */
+.winner-section,
+.loser-section {
+    margin-bottom: 3rem;
+}
+
+.winner-grid,
+.loser-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.winner-card,
+.loser-card {
+    background: var(--bg-white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.winner-card {
+    border-left: 4px solid var(--success-color);
+}
+
+.loser-card {
+    border-left: 4px solid var(--danger-color);
+}
+
+.winner-icon,
+.loser-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.winner-card h3,
+.loser-card h3 {
+    margin: 0.5rem 0;
+}
+
+.winner-card h3 {
+    color: var(--success-color);
+}
+
+.loser-card h3 {
+    color: var(--danger-color);
+}
+
+.winner-card p,
+.loser-card p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.winner-example,
+.loser-example {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.winner-example {
+    background: #e8f5e9;
+    border-left: 4px solid var(--success-color);
+}
+
+.loser-example {
+    background: #ffebee;
+    border-left: 4px solid var(--danger-color);
+}
+
+.winner-example h5,
+.loser-example h5 {
+    margin: 0 0 0.5rem 0;
+    color: var(--secondary-color);
+}
+
+.winner-example p,
+.loser-example p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* ===== 真实案例 ===== */
+.case-section {
+    margin-bottom: 3rem;
+}
+
+.case-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+.case-card {
+    background: var(--bg-white);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.case-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin: 1rem 1rem 0.5rem;
+}
+
+.winner-badge {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.loser-badge {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.case-card h3 {
+    margin: 0.5rem 1rem 1rem;
+    color: var(--secondary-color);
+}
+
+.case-content {
+    padding: 0 1.5rem 1.5rem;
+}
+
+.case-content h4 {
+    color: var(--primary-color);
+    margin: 1rem 0 0.5rem;
+}
+
+.case-content ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+}
+
+.case-content li {
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.case-content p {
+    color: var(--text-light);
+}
+
+/* ===== 核心区别 ===== */
+.core-difference {
+    background: var(--bg-white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.difference-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.difference-card {
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.difference-card:first-child {
+    background: linear-gradient(135deg, rgba(46, 125, 50, 0.1), rgba(27, 94, 32, 0.1));
+    border: 2px solid var(--success-color);
+}
+
+.difference-card:last-child {
+    background: linear-gradient(135deg, rgba(198, 40, 40, 0.1), rgba(142, 0, 0, 0.1));
+    border: 2px solid var(--danger-color);
+}
+
+.difference-card h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.difference-card:first-child h3 {
+    color: var(--success-color);
+}
+
+.difference-card:last-child h3 {
+    color: var(--danger-color);
+}
+
+.difference-card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.difference-card li {
+    padding: 0.8rem 0;
+    border-bottom: 1px dashed var(--border-color);
+    color: var(--text-color);
+}
+
+.difference-card li:last-child {
+    border-bottom: none;
+}
+
+.difference-card li strong {
+    color: var(--primary-color);
+}
+
+/* ===== 行动步骤 ===== */
+.action-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.step-card {
+    background: var(--bg-white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.step-number {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--success-color), #1b5e20);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.step-card h3 {
+    color: var(--success-color);
+    margin-top: 0.5rem;
+}
+
+.step-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
 .money-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -2216,6 +2592,37 @@ footer p {
     }
 
     .action-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison-header,
+    .comparison-row {
+        grid-template-columns: 1fr;
+    }
+
+    .winner-cell,
+    .loser-cell {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .winner-grid,
+    .loser-grid,
+    .case-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .difference-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .data-highlight {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .action-steps {
         grid-template-columns: 1fr;
     }
 }
