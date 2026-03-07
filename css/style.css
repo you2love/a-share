@@ -3845,3 +3845,89 @@ footer p {
     line-height: 1.8;
     margin: 0;
 }
+
+/* ===== A 股资金池样式 ===== */
+.money-pool {
+    margin-bottom: 4rem;
+}
+
+.pool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.pool-card {
+    background: var(--bg-white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    border-top: 4px solid;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.pool-card.out {
+    border-top-color: var(--danger-color);
+    background: linear-gradient(135deg, rgba(220, 53, 69, 0.05), rgba(220, 53, 69, 0.02));
+}
+
+.pool-card.in {
+    border-top-color: var(--success-color);
+    background: linear-gradient(135deg, rgba(40, 167, 69, 0.05), rgba(40, 167, 69, 0.02));
+}
+
+.pool-card.in.highlight {
+    border-top-color: var(--warning-color);
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 193, 7, 0.05));
+}
+
+.pool-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.pool-card h4 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.pool-card .amount {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.pool-card .note {
+    color: var(--text-light);
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+    .pool-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 0.8rem;
+    }
+
+    .pool-icon {
+        font-size: 2rem;
+    }
+
+    .pool-card h4 {
+        font-size: 0.9rem;
+    }
+
+    .pool-card .amount {
+        font-size: 0.8rem;
+    }
+}
