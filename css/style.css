@@ -3666,15 +3666,152 @@ footer p {
     footer {
         display: none;
     }
-    
+
     body {
         background: white;
     }
-    
+
     .card,
     .content-box,
     .lesson-card {
         box-shadow: none;
         border: 1px solid #ddd;
+    }
+}
+
+/* ===== 上证指数页面样式 ===== */
+.index-intro .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.info-card {
+    background: var(--bg-white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    border-top: 4px solid var(--primary-color);
+}
+
+.info-card h4 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.info-card p {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.example-box {
+    background: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-color);
+    margin: 1rem 0;
+}
+
+.limitation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.limitation-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    background: var(--bg-white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.limitation-num {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    opacity: 0.3;
+    min-width: 50px;
+}
+
+.limitation-text h4 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.limitation-text p {
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.7;
+}
+
+.index-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.index-card {
+    background: var(--bg-white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--primary-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.index-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.index-card h4 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.index-code {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.index-card p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+    .limitation-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .limitation-num {
+        font-size: 1.5rem;
+        min-width: 40px;
+    }
+
+    .index-grid {
+        grid-template-columns: 1fr;
     }
 }
